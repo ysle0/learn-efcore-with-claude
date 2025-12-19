@@ -218,11 +218,139 @@
 
 ---
 
+### Part 11: Best Practices
+
+#### 31. DbContext 설계 원칙
+- DbContext 수명 주기 관리
+- 하나의 DbContext vs 여러 DbContext
+- DbContext 팩토리 패턴
+- Bounded Context별 DbContext 분리
+
+#### 32. 엔티티 설계 Best Practices
+- 엔티티는 항상 유효한 상태 유지
+- private setter 활용
+- 컬렉션 네비게이션 속성 캡슐화
+- 도메인 로직을 엔티티에 포함
+
+#### 33. 쿼리 Best Practices
+- 필요한 데이터만 조회 (Select 프로젝션)
+- 페이징 필수 적용
+- 읽기 전용 쿼리에 AsNoTracking 사용
+- Include 남용 피하기
+
+#### 34. 마이그레이션 Best Practices
+- 마이그레이션 파일 버전 관리
+- 프로덕션 배포 전 마이그레이션 테스트
+- 롤백 전략 수립
+- 대용량 테이블 마이그레이션 주의사항
+
+#### 35. 보안 Best Practices
+- SQL Injection 방지
+- 연결 문자열 보안
+- 민감 데이터 암호화
+- 최소 권한 원칙 적용
+
+---
+
+### Part 12: Common Mistakes
+
+#### 36. 성능 관련 실수
+- N+1 쿼리 문제 (가장 흔한 실수)
+- 불필요한 데이터 로딩
+- 모든 쿼리에 ToList() 남발
+- 대용량 데이터 일괄 처리 미흡
+- Lazy Loading 의존으로 인한 성능 저하
+
+#### 37. DbContext 관련 실수
+- DbContext를 Singleton으로 등록
+- DbContext 수명 주기 무시
+- 여러 스레드에서 DbContext 공유
+- SaveChanges 호출 누락/과다 호출
+- Dispose 누락
+
+#### 38. 모델링 실수
+- 순환 참조(Circular Reference) 생성
+- 관계 설정 오류
+- Nullable 참조 타입 무시
+- 복합 키 설정 오류
+- 네비게이션 속성 불일치
+
+#### 39. 마이그레이션 실수
+- 프로덕션 DB에 직접 Update-Database 실행
+- 마이그레이션 파일 수동 수정 후 문제
+- 데이터 손실 마이그레이션 간과
+- 여러 개발자 마이그레이션 충돌
+- 시딩 데이터 중복
+
+#### 40. 쿼리 작성 실수
+- 클라이언트 평가(Client Evaluation) 간과
+- LINQ 표현식이 SQL로 변환 불가
+- 잘못된 비동기 패턴 사용
+- GroupBy 결과 처리 오류
+- 문자열 비교 시 대소문자 무시
+
+---
+
+### Part 13: Advanced Topics (심화)
+
+#### 41. 인터셉터(Interceptors)
+- SaveChanges 인터셉터
+- 쿼리 인터셉터
+- 연결 인터셉터
+- 감사 로그 자동화
+
+#### 42. 커스텀 컨벤션
+- 모델 빌딩 컨벤션
+- 네이밍 컨벤션 커스터마이징
+- 기본값 컨벤션 설정
+
+#### 43. 멀티테넌시 구현
+- 스키마 기반 멀티테넌시
+- 데이터베이스 기반 멀티테넌시
+- 행 수준 필터링 멀티테넌시
+- 테넌트 식별 전략
+
+#### 44. 분산 시스템과 EF Core
+- 분산 트랜잭션 처리
+- Outbox 패턴
+- 이벤트 소싱과 EF Core
+- CQRS 패턴 구현
+
+#### 45. 고급 매핑 기법
+- 테이블 분할(Table Splitting)
+- 엔티티 분할(Entity Splitting)
+- 뷰(View) 매핑
+- 저장 프로시저 매핑
+- TVF(Table-Valued Functions) 매핑
+
+#### 46. 성능 진단 및 모니터링
+- EF Core 로깅 심화
+- Application Insights 연동
+- Query Plan 분석
+- 성능 카운터 활용
+- MiniProfiler 연동
+
+#### 47. 마이크로서비스 환경
+- 서비스별 독립 데이터베이스
+- 데이터 동기화 전략
+- API 조합 패턴
+- Saga 패턴과 보상 트랜잭션
+
+#### 48. EF Core 내부 동작 원리
+- 변경 추적기 내부 구조
+- 쿼리 파이프라인 이해
+- 모델 빌딩 프로세스
+- 메타데이터 시스템
+
+---
+
 ## 학습 순서 권장
 
 1. **입문자**: Part 1 → Part 2 → Part 3 → Part 4 → Part 5 순서로 학습
 2. **경험자**: 필요한 Part를 선택적으로 학습
-3. **실무 적용**: Part 6, Part 7, Part 8 집중
+3. **실무 적용**: Part 6, Part 7, Part 8, Part 11 집중
+4. **실수 방지**: Part 12 (Common Mistakes)는 모든 레벨에서 필독
+5. **심화 학습**: Part 9, Part 13은 기본기 습득 후 도전
 
 ## 사전 요구 지식
 
