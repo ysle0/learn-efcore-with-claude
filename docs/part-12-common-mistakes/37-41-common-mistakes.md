@@ -1,4 +1,4 @@
-# Chapter 36-40: 흔한 실수와 해결법
+# Chapter 37-41: 흔한 실수와 해결법
 
 ## 개요
 
@@ -6,7 +6,7 @@ EF Core 개발에서 자주 발생하는 실수들과 그 해결 방법을 알�
 
 ---
 
-## 36. N+1 쿼리 문제
+## 37. N+1 쿼리 문제
 
 ### 36.1 문제 상황
 
@@ -76,7 +76,7 @@ services.AddDbContext<ApplicationDbContext>(options =>
 
 ---
 
-## 37. 추적 관련 문제
+## 38. 추적 관련 문제
 
 ### 37.1 동일 엔티티 중복 추적
 
@@ -143,7 +143,7 @@ await context.SaveChangesAsync();
 
 ---
 
-## 38. Lazy Loading 함정
+## 39. Lazy Loading 함정
 
 ### 38.1 직렬화 시 무한 루프
 
@@ -248,7 +248,7 @@ protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 
 ---
 
-## 39. 마이그레이션 실수
+## 40. 마이그레이션 실수
 
 ### 39.1 프로덕션에서 데이터 손실
 
@@ -338,7 +338,7 @@ var script = context.Database.GenerateCreateScript();
 
 ---
 
-## 40. 기타 흔한 실수
+## 41. 기타 흔한 실수
 
 ### 40.1 SaveChanges 호출 누락
 

@@ -1,4 +1,4 @@
-# Chapter 05: Fluent API 심화
+# Chapter 07: Fluent API 심화
 
 ## 개요
 

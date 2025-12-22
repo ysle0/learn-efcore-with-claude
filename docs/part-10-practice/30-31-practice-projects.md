@@ -1,4 +1,4 @@
-# Chapter 29-30: 실습 프로젝트
+# Chapter 30-31: 실습 프로젝트
 
 ## 개요
 
@@ -6,9 +6,9 @@
 
 ---
 
-## 29. 블로그 시스템 구현
+## 30. 블로그 시스템 구현
 
-### 29.1 도메인 모델 설계
+### 30.1 도메인 모델 설계
 
 ```csharp
 // 엔티티 정의
@@ -107,7 +107,7 @@ public enum PostStatus
 }
 ```
 
-### 29.2 DbContext 구성
+### 31.2 DbContext 구성
 
 ```csharp
 public class BlogDbContext : DbContext
@@ -210,7 +210,7 @@ public class CommentConfiguration : IEntityTypeConfiguration<Comment>
 }
 ```
 
-### 29.3 Repository 패턴 구현
+### 30.3 Repository 패턴 구현
 
 ```csharp
 public interface IPostRepository
@@ -305,7 +305,7 @@ public class PostRepository : IPostRepository
 }
 ```
 
-### 29.4 서비스 레이어
+### 30.4 서비스 레이어
 
 ```csharp
 public interface IPostService
@@ -419,9 +419,9 @@ public class PostService : IPostService
 
 ---
 
-## 30. E-Commerce 시스템 구현
+## 31. E-Commerce 시스템 구현
 
-### 30.1 도메인 모델
+### 31.1 도메인 모델
 
 ```csharp
 // Aggregate Root: Order
@@ -600,7 +600,7 @@ public enum CustomerTier
 }
 ```
 
-### 30.2 DbContext 및 설정
+### 31.2 DbContext 및 설정
 
 ```csharp
 public class ECommerceDbContext : DbContext
@@ -727,7 +727,7 @@ public class ECommerceDbContext : DbContext
 }
 ```
 
-### 30.3 주문 처리 서비스
+### 31.3 주문 처리 서비스
 
 ```csharp
 public interface IOrderService
@@ -948,7 +948,7 @@ public class OrderService : IOrderService
 }
 ```
 
-### 30.4 통합 테스트
+### 31.4 통합 테스트
 
 ```csharp
 public class OrderServiceIntegrationTests : IClassFixture<DatabaseFixture>

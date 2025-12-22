@@ -1,4 +1,4 @@
-# Chapter 08: LINQ 쿼리 기초
+# Chapter 10: LINQ 쿼리 기초
 
 ## 개요
 

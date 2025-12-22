@@ -1,4 +1,4 @@
-# Chapter 31-35: 모범 사례 (Best Practices)
+# Chapter 32-36: 모범 사례 (Best Practices)
 
 ## 개요
 
@@ -6,7 +6,7 @@ EF Core를 효과적으로 사용하기 위한 모범 사례를 알아봅니다.
 
 ---
 
-## 31. DbContext 수명 관리
+## 32. DbContext 수명 관리
 
 ### 31.1 올바른 수명 주기 선택
 
@@ -157,7 +157,7 @@ public class TenantDbContext : DbContext
 
 ---
 
-## 32. 쿼리 성능 최적화
+## 33. 쿼리 성능 최적화
 
 ### 32.1 필요한 데이터만 조회
 
@@ -290,7 +290,7 @@ modelBuilder.Entity<Product>()
 
 ---
 
-## 33. 트랜잭션 관리
+## 34. 트랜잭션 관리
 
 ### 33.1 SaveChanges 트랜잭션
 
@@ -414,7 +414,7 @@ public class OrderSaga
 
 ---
 
-## 34. 보안 모범 사례
+## 35. 보안 모범 사례
 
 ### 34.1 SQL Injection 방지
 
@@ -520,7 +520,7 @@ public async Task<Document?> GetDocumentAsync(int documentId)
 
 ---
 
-## 35. 코드 구조화
+## 36. 코드 구조화
 
 ### 35.1 DbContext 분리
 

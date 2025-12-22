@@ -1,4 +1,4 @@
-# Chapter 22: Repository 패턴
+# Chapter 23: Repository 패턴
 
 ## 개요
 

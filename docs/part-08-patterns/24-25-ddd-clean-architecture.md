@@ -1,4 +1,4 @@
-# Chapter 23-24: DDD와 Clean Architecture
+# Chapter 24-25: DDD와 Clean Architecture
 
 ## 개요
 
@@ -6,7 +6,7 @@ Domain-Driven Design과 Clean Architecture 패턴을 EF Core와 함께 사용하
 
 ---
 
-## 23. DDD와 EF Core
+## 24. DDD와 EF Core
 
 ### Aggregate Root
 
@@ -120,7 +120,7 @@ public class DomainEventDispatcher
 
 ---
 
-## 24. Clean Architecture와 EF Core
+## 25. Clean Architecture와 EF Core
 
 ### 프로젝트 구조
 

@@ -1,4 +1,4 @@
-# Chapter 09: 관련 데이터 로딩
+# Chapter 05: 관련 데이터 로딩
 
 ## 개요
 
@@ -602,4 +602,4 @@ public async Task<Order> GetOrderAsync(int id, bool includeDetails)
 
 ## 다음 장 예고
 
-다음 장에서는 GroupBy, 조인, 서브쿼리 등 고급 쿼리 기법을 알아봅니다.
+다음 장에서는 ORM에서 가장 흔한 성능 문제인 N+1 문제를 알아봅니다.

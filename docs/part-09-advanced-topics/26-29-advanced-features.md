@@ -1,4 +1,4 @@
-# Chapter 25-28: 고급 주제
+# Chapter 26-29: 고급 주제
 
 ## 개요
 
@@ -6,7 +6,7 @@
 
 ---
 
-## 25. 데이터베이스 프로바이더별 기능
+## 26. 데이터베이스 프로바이더별 기능
 
 ### SQL Server 전용
 
@@ -67,7 +67,7 @@ modelBuilder.HasPostgresExtension("hstore");
 
 ---
 
-## 26. JSON 컬럼 지원 (EF Core 7+)
+## 27. JSON 컬럼 지원 (EF Core 7+)
 
 ### 기본 사용
 
@@ -118,7 +118,7 @@ modelBuilder.Entity<Product>()
 
 ---
 
-## 27. 시간 테이블과 감사
+## 28. 시간 테이블과 감사
 
 ### 자동 감사 로그
 
@@ -172,7 +172,7 @@ foreach (var entry in ChangeTracker.Entries()
 
 ---
 
-## 28. Database-First 접근법
+## 29. Database-First 접근법
 
 ### Scaffold 명령
 

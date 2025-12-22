@@ -1,4 +1,4 @@
-# Chapter 41-48: 고급 주제 심화
+# Chapter 42-49: 고급 주제 심화
 
 ## 개요
 
@@ -6,7 +6,7 @@ EF Core의 심화 고급 기능들을 알아봅니다. 인터셉터, 이벤트, 
 
 ---
 
-## 41. 인터셉터(Interceptors)
+## 42. 인터셉터(Interceptors)
 
 ### 41.1 SaveChanges 인터셉터
 
@@ -170,7 +170,7 @@ public class ConnectionInterceptor : DbConnectionInterceptor
 
 ---
 
-## 42. 이벤트와 진단
+## 43. 이벤트와 진단
 
 ### 42.1 DiagnosticListener
 
@@ -265,7 +265,7 @@ public class ApplicationDbContext : DbContext
 
 ---
 
-## 43. 성능 모니터링
+## 44. 성능 모니터링
 
 ### 43.1 Application Insights 통합
 
@@ -379,7 +379,7 @@ public class EfCoreMetrics
 
 ---
 
-## 44. 멀티 테넌시
+## 45. 멀티 테넌시
 
 ### 44.1 스키마 기반 멀티 테넌시
 
@@ -502,7 +502,7 @@ public class TenantDbContextFactory : IDbContextFactory<ApplicationDbContext>
 
 ---
 
-## 45. 도메인 이벤트
+## 46. 도메인 이벤트
 
 ### 45.1 도메인 이벤트 패턴
 
@@ -612,7 +612,7 @@ public class OrderCreatedEventHandler : INotificationHandler<OrderCreatedEvent>
 
 ---
 
-## 46. 분산 트랜잭션 패턴
+## 47. 분산 트랜잭션 패턴
 
 ### 46.1 Outbox 패턴
 
@@ -752,7 +752,7 @@ public class OrderSaga
 
 ---
 
-## 47. 고급 쿼리 기법
+## 48. 고급 쿼리 기법
 
 ### 47.1 동적 쿼리 빌더
 
@@ -873,7 +873,7 @@ private IQueryable<T> ApplySpecification<T>(ISpecification<T> spec) where T : cl
 
 ---
 
-## 48. EF Core 최신 기능 (EF Core 8+)
+## 49. EF Core 최신 기능 (EF Core 8+)
 
 ### 48.1 Complex Types
 

@@ -1,4 +1,4 @@
-# Chapter 12: 변경 추적(Change Tracking)
+# Chapter 13: 변경 추적(Change Tracking)
 
 ## 개요
 
